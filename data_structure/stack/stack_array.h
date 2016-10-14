@@ -1,5 +1,5 @@
-#ifndef STACK_H
-#define STACK_H
+#ifndef STACK_ARRAY_H
+#define STACK_ARRAY_H
 
 #include <iostream>
 using namespace std;
@@ -67,4 +67,4 @@ public:
 	}
 };
 
-#endif
+#endif // endif stack_array.h
