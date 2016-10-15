@@ -1,3 +1,7 @@
+/*
+ * 使用数组来实现一个stack
+ * 变量命名style： 类名第一个字母大写；函数名第一个字母大写；变量名小写加下划线；
+ */
 #ifndef STACK_ARRAY_H
 #define STACK_ARRAY_H
 
@@ -8,13 +12,13 @@ template<class Type>
 class Stack 
 {
 private:
-	int top, MaxSize;
+	int top, max_size;
 	Type* stack;
 public:
-	explicit Stack(int Msize): MaxSize(Msize)
+	explicit Stack(int msize): max_size(msize)
 	{
 		top = -1;
-		stack = new Type[MaxSize];
+		stack = new Type[max_size];
 	}
 	~Stack()
 	{
@@ -48,7 +52,7 @@ public:
 	}
 	inline bool StackFull()
 	{
-		if (top >= (MaxSize-1))
+		if (top >= (max_size-1))
 			return true;
 		else
 			return false;
