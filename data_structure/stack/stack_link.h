@@ -1,3 +1,7 @@
+/*
+ * 使用链表来实现一个stack
+ * 变量命名style： 类名/结构体第一个字母大写；函数名第一个字母大写；变量名小写加下划线；
+ */
 #ifndef STACK_LINK_H
 #define STACK_LINK_H
 
@@ -19,6 +23,7 @@ public:
 	~Stack_link()
 	{
 		struct Link_node* tmp;
+		// 释放申请的空间
 		while (top)
 		{
 			tmp = top;
@@ -55,7 +60,6 @@ public:
 			struct Link_node *tmp = new struct Link_node;
 			tmp = top->link;
 			top = tmp;
-			//delete tmp;
 			return true;	
 		}
 	}
