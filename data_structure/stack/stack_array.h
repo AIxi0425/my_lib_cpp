@@ -1,6 +1,6 @@
 /*
  * 使用数组来实现一个stack
- * 变量命名style： 类名第一个字母大写；函数名第一个字母大写；变量名小写加下划线；
+ * 变量命名style： 类名/结构体第一个字母大写；函数名第一个字母大写；变量名小写加下划线；
  */
 #ifndef STACK_ARRAY_H
 #define STACK_ARRAY_H
