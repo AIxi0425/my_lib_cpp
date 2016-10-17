@@ -2,25 +2,25 @@
  * 使用链表来实现一个Stack模板类
  * 变量命名style： 类名/结构体第一个字母大写；函数名第一个字母大写；变量名小写；使用下划线；
  */
-#ifndef STACK_LINK_H
-#define STACK_LINK_H
+#ifndef STACK_LIST_H
+#define STACK_LIST_H
 
 #include <iostream>
 using namespace std;
 
 template<class Type>
-class Stack_link{
+class Stack_list{
 private:
 	struct Link_node{
 		Type data;
 		struct Link_node *link;
 	}*top;
 public:
-	explicit Stack_link()
+	explicit Stack_list()
 	{
 		top = NULL;
 	}
-	~Stack_link()
+	~Stack_list()
 	{
 		struct Link_node* tmp;
 		// 释放申请的空间
@@ -83,4 +83,4 @@ public:
 	}
 };
 
-#endif // endif stack_link.h
+#endif // endif stack_list.h
