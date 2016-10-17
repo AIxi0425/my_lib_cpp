@@ -9,18 +9,18 @@
 using namespace std;
 
 template<class Type>
-class Stack 
+class Stack_array
 {
 private:
 	int top, max_size;
 	Type* stack;
 public:
-	explicit Stack(int msize): max_size(msize)
+	explicit Stack_array(int msize): max_size(msize)
 	{
 		top = -1;
 		stack = new Type[max_size];
 	}
-	~Stack()
+	~Stack_array()
 	{
 		delete [] stack;
 	}
