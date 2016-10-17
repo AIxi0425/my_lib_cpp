@@ -1,6 +1,6 @@
 /*
- * 使用数组来实现一个stack
- * 变量命名style： 类名/结构体第一个字母大写；函数名第一个字母大写；变量名小写加下划线；
+ * 使用数组来实现一个Stack模板类
+ * 变量命名style： 类名/结构体第一个字母大写；函数名第一个字母大写；变量名小写；使用下划线；
  */
 #ifndef STACK_ARRAY_H
 #define STACK_ARRAY_H
@@ -24,9 +24,9 @@ public:
 	{
 		delete [] stack;
 	}
-	inline bool Add(const Type item)
+	inline bool Push(const Type item)
 	{
-		if (StackFull())
+		if (Stack_full())
 		{
 			cout << "Stack is full!" << endl;	
 			return false;
@@ -37,9 +37,9 @@ public:
 			return true;
 		}
 	}
-	inline bool Delete(Type& item)
+	inline bool Pop(Type& item)
 	{
-		if (StackEmpty())
+		if (Stack_empty())
 		{
 			cout << "Stack is empty!" << endl;	
 			return false;
@@ -50,14 +50,14 @@ public:
 			return true;
 		}
 	}
-	inline bool StackFull()
+	inline bool Stack_full()
 	{
-		if (top >= (max_size-1))
+		if (top >= (max_size - 1))
 			return true;
 		else
 			return false;
 	}
-	inline bool StackEmpty()
+	inline bool Stack_empty()
 	{
 		if (top < 0)
 			return true;
