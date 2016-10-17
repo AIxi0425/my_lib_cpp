@@ -1,6 +1,6 @@
 /*
- * 使用链表来实现一个stack
- * 变量命名style： 类名/结构体第一个字母大写；函数名第一个字母大写；变量名小写加下划线；
+ * 使用链表来实现一个Stack模板类
+ * 变量命名style： 类名/结构体第一个字母大写；函数名第一个字母大写；变量名小写；使用下划线；
  */
 #ifndef STACK_LINK_H
 #define STACK_LINK_H
@@ -31,7 +31,7 @@ public:
 			delete tmp;
 		}
 	}
-	inline bool Add(const Type item)
+	inline bool Push(const Type item)
 	{
 		struct Link_node *tmp = new struct Link_node;
 		if (tmp)
@@ -47,9 +47,9 @@ public:
 			return false;
 		}
 	}
-	inline bool Delete(Type& item)
+	inline bool Pop(Type& item)
 	{
-		if (StackEmpty())
+		if (Stack_empty())
 		{
 			cout << "stack is empty" << endl;
 			return false;
@@ -63,7 +63,7 @@ public:
 			return true;	
 		}
 	}
-	inline bool StackEmpty()
+	inline bool Stack_empty()
 	{
 		if (top)
 			return false;
@@ -82,4 +82,5 @@ public:
 		
 	}
 };
+
 #endif // endif stack_link.h
