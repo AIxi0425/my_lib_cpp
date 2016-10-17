@@ -79,7 +79,6 @@ public:
 		}
 		
 			cout << top->data << endl;
-		
 	}
 };
 
