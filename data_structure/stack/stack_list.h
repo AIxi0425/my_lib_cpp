@@ -1,6 +1,6 @@
 /*
  * 使用链表来实现一个Stack模板类
- * 变量命名style： 类名/结构体第一个字母大写；函数名第一个字母大写；变量名小写；使用下划线；
+ * 变量命名style： 类名/结构体第一个字母大写；函数名第一个字母大写；变量名小写；使用下划线；{}换行；
  */
 #ifndef STACK_LIST_H
 #define STACK_LIST_H
@@ -9,9 +9,11 @@
 using namespace std;
 
 template<class Type>
-class Stack_list{
+class Stack_list
+{
 private:
-	struct Link_node{
+	struct Link_node
+	{
 		Type data;
 		struct Link_node *link;
 	}*top;
