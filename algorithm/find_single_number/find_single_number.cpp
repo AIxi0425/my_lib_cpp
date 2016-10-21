@@ -3,7 +3,7 @@
  * Time : O(n)
  * Space: O(1)
  * 异或的作用： 1) 交换2个整数值而不必使用第3个参数
- *	       2) 奇偶判断：^a 	
+ *	        2) 奇偶判断：^a 	
  */
 #include <iostream>
 #include <vector>
