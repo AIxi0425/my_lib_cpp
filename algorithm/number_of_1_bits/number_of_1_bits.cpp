@@ -2,6 +2,7 @@
  * Calculate the number of '1' bits for an unsinged integer 
  * Time  : O(logn) = O(32)
  * Space : O(1)
+ * 将字组中,值为'1'且最靠右边的bits置为0 : x & (x-1) [P.S. 此操作可判断某个无符号整数是不是2的幂或者'0']
  */
 
 #include <iostream>
