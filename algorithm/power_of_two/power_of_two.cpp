@@ -1,7 +1,7 @@
 /*
  * Given an integer, write a function to determine if it is a power of two.
- * Time :
- * Space:
+ * Time : O(1)
+ * Space: O(1)
  */
 
 #include <iostream>
@@ -19,7 +19,7 @@ public:
 int main()
 {
 	Solution A;
-	cout << A.Is_power_of_two(1023) << endl;
+	cout << A.Is_power_of_two(512) << endl;
 	
 	return 0;
 }
